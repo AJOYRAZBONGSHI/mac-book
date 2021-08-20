@@ -48,7 +48,18 @@
   font-size: 17px;
   margin: 10px 0;
 }
+.button:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.5s ease;
+}
 /* price section */
+tr {
+  border-bottom: 2px solid #afc8dc;
+}
+tr .underline {
+  border-bottom: 2px solid black;
+}
 th {
   padding: 10px;
   text-align: left;
