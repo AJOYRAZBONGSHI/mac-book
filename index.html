@@ -17,13 +17,16 @@
         <!-- header section -->
     </header>
     <main>
+        <!-- left section -->
         <section class="container">
             <div class="hero-section">
                 <div class="left-side">
                     <figure class="img">
                         <img src="images/mac.png" alt="mac book">
+                        <img src="images/apple-4-logo.png" alt="mac book">
                     </figure>
                 </div>
+                <!-- right section -->
                 <div class="right-side">
                     <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
                     <p class="text">The M1 chip is the most powerful chip that Apple has created to date, and it is
@@ -31,58 +34,69 @@
                         A14 chip in the latest ‌iPhone‌ and iPad Air models, built on a 5-nanometer process by Taiwan
                         Manufacturing Company. TSMC builds all of Apple's chips and has done so for
                         many years.</p>
+                    <!-- memory part -->
                     <div class="memory">
                         <h3>Memory</h3>
-                        <button id="memory-free" class="button">8GB unified memory</button>
-                        <button id="memory-high" class="button">16GB unified memory</button>
+                        <button onclick="productCost('memory', 0)" id="memory-free" class="button">8GB unified
+                            memory</button>
+                        <button onclick="productCost('memory', 180)" id="memory-high" class="button">16GB unified
+                            memory</button>
                     </div>
+                    <!-- storage part -->
                     <div class="storage">
                         <h3>Storage</h3>
-                        <button id="storage-free" class="button">256GB SSD storage</button>
-                        <button id="storage-medium" class="button">512GB storage</button>
-                        <button id="storage-high" class="button">1TB SSD storage</button>
+                        <button onclick="productCost('storage', 0)" class="button">256GB SSD storage</button>
+                        <button onclick="productCost('storage', 100)" class="button">512GB storage</button>
+                        <button onclick="productCost('storage', 180)" class="button">1TB SSD storage</button>
                     </div>
+                    <!-- delivery part -->
                     <div class="delivery">
                         <h3>Choose your delivery option</h3>
-                        <button id="delivery-free" class="button">Sunday, Aug 29 FREE Prime
+                        <button onclick="productCost('delivery', 0)" class="button">Sunday, Aug 29 FREE
+                            Prime
                             Delivery</button>
-                        <button id="delivery-high" class="button">Sunday, Aug 22 Delivery
+                        <button onclick="productCost('delivery', 20)" id="express-delivery" class="button">Sunday, Aug
+                            22
+                            Delivery
                             charge $20</button>
                     </div>
+                    <!-- price part -->
                     <div class="price">
                         <table>
                             <tr>
                                 <th>Best Price</th>
-                                <th>$<span>1299</span></th>
+                                <th>$<span id="best-price">1299</span></th>
                             </tr>
                             <tr>
                                 <th>Extra Memory Cost</th>
-                                <th>$<span id="extra-memory">0</spa>
+                                <th>$<span id="memory-cost">0</spa>
                                 </th>
                             </tr>
                             <tr>
                                 <th>Extra Storage Cost</th>
-                                <th>$<span id="extra-storage">0</span></th>
+                                <th>$<span id="storage-cost">0</span></th>
                             </tr>
-                            <tr class="underline">
+                            <tr>
                                 <th class="underline">Delivery Charge</th>
-                                <th class="underline">$<span id="extra-delivery">0</span></th>
+                                <th class="underline">$<span id="delivery-cost">0</span></th>
                             </tr>
                             <tr>
                                 <th>Total Price</th>
-                                <th>$<span id="total-price">1299</span></th>
+                                <th>$<span id="total-cost">1299</span></th>
                             </tr>
                         </table>
                     </div>
+                    <!-- pomo code part -->
                     <div class="pomo">
                         <h3>Add Pomo code</h3>
-                        <input class="input-field" type="text">
-                        <button class="button pomo-btn">Apply</button>
+                        <input placeholder="promo code" id="promo-word" class="input-field" type="text">
+                        <button id="code-btn" disabled class="button pomo-btn">Apply</button>
                     </div>
                 </div>
             </div>
+            <!-- grand total -->
             <div class="total">
-                <h1>Total: $<span>1299</span></h1>
+                <h1>Total: $<span id="total-price">1299</span></h1>
             </div>
         </section>
     </main>

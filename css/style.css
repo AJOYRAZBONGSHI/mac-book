@@ -5,7 +5,9 @@
   font-family: "Poppins", sans-serif;
   /* border: 1px solid red; */
 }
-
+body {
+  background-color: rgba(177, 212, 231, 0.144);
+}
 /* hero-section style start */
 .hero-section {
   display: grid;
@@ -48,10 +50,15 @@
   font-size: 17px;
   margin: 10px 0;
 }
+.button:focus,
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(20, 124, 180, 0.4);
+}
 .button:hover {
   color: white;
   background-color: black;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 /* price section */
 tr {
