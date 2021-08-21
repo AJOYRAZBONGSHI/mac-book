@@ -9,14 +9,14 @@ function productCost(product, price) {
 
 function totalCost() {
   const defaultPrice = document.getElementById("best-price");
-  const bestPrice = parseInt(defaultPrice.innerText);
+  const bestCost = parseInt(defaultPrice.innerText);
   const memoryPrice = document.getElementById("memory-cost");
   const memoryCost = parseInt(memoryPrice.innerText);
   const storagePrice = document.getElementById("storage-cost");
   const storageCost = parseInt(storagePrice.innerText);
   const deliveryPrice = document.getElementById("delivery-cost");
   const deliveryCost = parseInt(deliveryPrice.innerText);
-  const total = bestPrice + memoryCost + storageCost + deliveryCost;
+  const total = bestCost + memoryCost + storageCost + deliveryCost;
   document.getElementById("total-cost").innerText = total;
   document.getElementById("total-price").innerText = total;
 }

@@ -53,7 +53,7 @@ body {
 .button:focus,
 .input-field:focus {
   outline: none;
-  box-shadow: 0 0 0 5px rgba(20, 124, 180, 0.4);
+  box-shadow: 0 0 0 5px rgba(2, 16, 24, 0.4);
 }
 .button:hover {
   color: white;
